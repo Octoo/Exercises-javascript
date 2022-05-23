@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+      
+//function to add a typed number to 7
+function add7() {
+  let inputNum = parseInt(prompt("Quelle valeur doit etre ajoutée à 7?"));
+  let result = 7+inputNum;
+  console.log(result);
+}
+
+add7();
+//function that takes 2 numbers and return their product
+
+function multiply(){
+    let firstNumber=parseInt(prompt("Entrez le premier nombre à multiplier"));
+    let secondNumber=parseInt(prompt("Entrez le second nombre à multiplier"));
+    let result=secondNumber*firstNumber;
+    console.log(result);
+}
+multiply();
+
+//function capitalize
+function capitalize(){
+    let inputText=prompt("Entrez le mot a mettre en majuscule");
+    let minimize=inputText.toLowerCase();
+    let tab=minimize.slice(0,1);
+    let result=tab.toUpperCase()+minimize.slice(1);
+    console.log(result);
+
+}
+capitalize();
+
+//function that returns the last letter of that string.
+/*function lastLetter(){
+    const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "];
+    let inputText=prompt("Entrez le mot a réduire");
+    const last = inputText[inputText.length - 1];
+    if(last !=alphabet){
+        alert("Entrez une texte valide");
+        
+    }
+    else{
+        console.log(last);
+
+    }  
+}
+lastLetter();
+*/
+
+function lastLetter(){
+    let inputText=prompt("Entrez le mot a réduire");
+    let str=inputText.slice(-1);
+    console.log(str);
+
+}
+lastLetter();
+
+  </script>
+</body>
+</html>
